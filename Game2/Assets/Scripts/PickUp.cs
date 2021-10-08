@@ -9,7 +9,7 @@ public class PickUp : MonoBehaviour
     // Start is called before the first frame update
     void OnMouseDown()
     {
-        GetComponent<BoxCollider>().enable = false;
+        //GetComponent<BoxCollider>().enable = false;
         GetComponent<Rigidbody>().useGravity = false;
         this.transform.position = theDestiny.position;
         this.transform.parent = GameObject.Find("PickUpLoc").transform;
@@ -17,7 +17,7 @@ public class PickUp : MonoBehaviour
 
     void OnMouseUp()
     {
-        GetComponent<BoxCollider>().enable = true;
+        //GetComponent<BoxCollider>().enable = true;
         this.transform.parent = null;
         GetComponent<Rigidbody>().useGravity = true;
     }
